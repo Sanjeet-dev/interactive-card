@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="container">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <div class="outerInner">
+      
+      <section class="result">
+        <h2>Your Result</h2>
+        <div class="circle">
+          <h1 class="heading">76</h1>
+          <p class="para">of 100</p>
+        </div>
+        <div class="info">
+          <h1 class="heading">Great</h1>
+          <p class="para">You have scored higher then 25% of people who have given this exam.</p>
+        </div>
+      </section>
 
-  Reaction
-  80 / 100
+      <section class="summary">
+        <h2 class="title">Summary</h2>
+        <div class="rows">
+          <div class="row" style="background-color: #ff000014;">
+            <div class="svg-holder reaction-bar">
+              <img src="./assets/images/icon-reaction.svg" alt="icon">
+              <p>Reaction</p>
+            </div>
+            <p class="para"><b>80</b>/100</p>
+          </div>
+          <div class="row" style="background-color: rgba(255, 255, 0, 0.164);">
+            <div class="svg-holder memory-bar">
+              <img src="./assets/images/icon-memory.svg" alt="icon">
+              <p>Memory</p>
+            </div>
+            <p class="para"><b>80</b>/100</p>
 
-  Memory
-  92 / 100
+          </div>
+          <div class="row" style="background-color: rgba(0, 128, 0, 0.103);">
+            <div class="svg-holder verbal-bar">
+              <img src="./assets/images/icon-verbal.svg" alt="icon">
+              <p>Verbal</p>
+            </div>
+            <p class="para"><b>80</b>/100</p>
+          </div>
+          <div class="row" style="background-color: rgba(0, 0, 255, 0.066);">
+            <div class="svg-holder visual-bar">
+              <img src="./assets/images/icon-visual.svg" alt="icon">
+              <p>Visual</p>
+            </div>
+            <p class="para"><b>80</b>/100</p>
+          </div>
+        </div>
+        <button class="btn">Continue</button>
+      </section>
 
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      
+      
+    </div>
   </div>
 </body>
+
 </html>
